@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1170">
+	<meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta name="kewords" content="">
+    <link rel="shortcut icon" href="logo_vkladka.gif">
+</head>
+<body>
+
+    
+<header>
+    <div class="head_contaier">
+    <img class="header_container-logo" src="img/os2.svg" height="75px" alt="Logo">
+     <div class="header_input">
+        <input type="text" placeholder="      Поиск" class="header_search">
+        <img src="search_icon.png" class="input_icon">
+    </div>
+    
+
+        
+    <nav>
+                <ul class="nav_menu">
+                    <li id="d666"><a href="#">Сотрудничество</a></li>
+                    <li id="d666"><a href="#">Магазины</a></li>
+                    <li id="d666"><a href="#">Помощь</a></li>
+                    <li id="d666"><a href="#">Регистрация</a></li>
+                </ul>
+            </nav>    
+    </div>
+     
+    
+    </header>
+    <script>
+    
+    var icon = document.querySelector(".input_icon");
+    var input = document.querySelector(".header_search");
+        
+    input.addEventListener("focus",insideRemover);
+        
+    function insideRemover() {
+        icon.style.display = "none";
+        input.placeholder = "";
+        window.addEventListener("mousedown",function(event) {
+            if (event.target.className != "header_search" && input.value == "") {
+                input.placeholder = "      Поиск";
+                icon.style.display = "block";
+            }    
+        })
+    }
+        
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
